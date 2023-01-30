@@ -1,0 +1,294 @@
+:root{
+	--bgnav: #000000;
+	--navcolor: #838877;
+	--green:#44d62c;
+	--white:#ffffff;
+	--footer:#111111;
+	--mainbg:#222222;
+	--web: #ff9c07;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	max-width: 81rem;
+	margin: 0 auto;
+	padding: 20px 40px;
+}
+
+.navbar {
+	background-color: var(--bgnav);
+	border-bottom: 1px solid var(--green);
+	
+}
+
+.navbar .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 3%;
+}
+
+.lists .list-group {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.lists .list-group a {
+	color: var(--navcolor);
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+
+.lists .list-group a:hover {
+	color: var(--white);
+}
+
+.main{
+	background: url('./img/02-desktop\ \(2\).jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 90vh;
+}
+
+.main-content {
+	padding-top: 40px;
+}
+
+.web {
+	background-color: var(--web);
+	width: 10%;
+	margin-left: 45%;
+}
+
+.web h3 {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 16px;
+	padding: 5px 0px;
+}
+
+.web span {
+	font-size: 10px;
+	font-weight: lighter;
+}
+
+
+ h1 {
+	color: var(--white);
+	font-size: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+
+.text, .item-inner, .item-inner2 p {
+	color: var(--white);
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.link {
+	text-decoration: none;
+	color: var(--white);
+	font-family: sans-serif;
+	text-transform: capitalize;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.fa-light {
+	color: var(--green);
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.items {
+	background-color: var(--mainbg);
+	padding: 10px 0px;
+}
+
+.item img {
+	height: 100vh;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buy {
+	margin-left: 20px;
+}
+
+.buy:hover {
+	border-bottom: 1px solid var(--white);
+}
+
+.item-inner {
+	position: absolute;
+	top: 110%;
+	left: 25%;
+	
+}
+
+.item-inner2 {
+	position: absolute;
+	top: 210%;
+	left: 25%;
+}
+
+.grid-items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.grid-inner {
+	position: absolute;
+	top: 310%;
+	
+}
+
+.grid-inner h1, 
+.grid-inner2 h1,
+.grid-inner3 h1 {
+	font-size: 30px;
+	margin-left: 20%;
+	text-align: center;
+}
+
+.grid-inner p, 
+.grid-inner2 p,
+.grid-inner3 p {
+	color: var(--white);
+	font-size: 20px;
+	text-align: center;
+	margin-left: 30px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.grid-inner2 {
+	position: absolute;
+	top: 360%;
+}
+
+.grid-inner3 {
+	position: absolute;
+	top: 420%;
+}
+
+.footer {
+	background-color: var(--footer);
+	padding-top: 20px;
+}
+
+.grid-footer {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.top {
+	margin-top: 20px;
+}
+
+.footer-text {
+	color: var(--white);
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+.footer-links {
+	margin-top: 20px;
+}
+
+.footer-links .footer-link p {
+	color: var(--navcolor);
+	padding: 5px 0px;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background-color: var(--navcolor);
+	margin-top: 20px;
+}
+
+.flex-footer {
+	display: flex;
+	align-items: center;
+	justify-self: space-between;
+	margin-top: 10px;
+}
+
+ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.copyright,
+ul li a {
+	color: var(--navcolor);
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+ul .last a::after{
+	content: '|';
+	margin-left: 10px;
+}
+
+.none::after {
+	content: '';
+}
+
+.footer-green {
+	color: var(--green);
+	font-family: sans-serif;
+}
+
+.state {
+	margin-left: 20px;
+	color: var(--white);
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.state a {
+	color: var(--navcolor);
+}

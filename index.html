@@ -6,11 +6,11 @@
 	<title>Razer website</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="font/css/all.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 </head>
 <body>
 	<div class="header">
-		<nav class="navbar">
+		<nav class="navbar-desktop">
 			<div class="container">
 				<a href="#" class="logo"><img src="img/razer-ths-logo.svg">
 					<ul class="lists">
@@ -23,32 +23,75 @@
 						<li class="list-group"><a href="#">Support</a></li>
 						<li class="list-group"><a href="#">Store</a></li>
 						<li class="list-group"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-						<li class="list-group"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+						<li class="list-group"><a href="#"><i class="fa-solid fa-cart-shopping shopping"></i></a></li>
 					</ul>
 			</div>
 		</nav>
+
+		<!--====nav-mobile====-->
+		<nav class="navbar-mobile">
+			<span class="bx bx-box" id="menu-icon"></span>
+			<a href="#" class="logo"><img src="img/razer-ths-logo.svg"></a>
+			<a href="#"><i class="fa-solid fa-cart-shopping shopping2"></i></a>
+		</nav>
+
+		<!--====menu-nav====-->
+
+	<div class="menu-nav">
+
+		<div class="search-bar">
+			<input type="search" placeholder="search razer.com">
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</div>
+		
+		<div class="menu-nav-link">
+				<a href="#" class="menu-link"><p>PC</p></a>
+				<a href="#" class="menu-link"><p>Console</p></a>
+				<a href="#" class="menu-link"><p>mobile</p></a>
+				<a href="#" class="menu-link"><p>Lifestyle</p></a>
+				<a href="#" class="menu-link"><p>Services</p></a>
+				<a href="#" class="menu-link"><p>Community</p></a>
+				<a href="#" class="menu-link"><p>support</p></a>
+				<a href="#" class="menu-link"><p>Store</p></a>
+		</div>
 	</div>
+
+	</div>
+
+	
 
 	<section class="main">
 		<div class="main-content">
 			<div class="web">
 				<h3><span>razer.com</span> exclusive</h3>
 			</div>
-			<div class="text">
+			<div class="tex">
 				<h1>Razer viper mini signature edition</h1>
 				<p>the best lightweight performance gaming mouse</p>
 				<a href="#" class="link">learn more<i class="fa-light fa-greater-than"></i></a>
 			</div>
 		</div>
+
+		<!--====cart items====-->
+		<div class="cart">
+			<p class="empty">your cart is empty</p>
+			<div class="cart-links">
+				<a href="#" class="cart-link"><p><i class="fa-solid fa-cart-shopping"></i>cart</p></a>
+				<a href="#" class="cart-link"><p><i class="fa-solid fa-folder"></i></i>orders</p></a>
+				<a href="#" class="cart-link"><p><i class="fa-regular fa-user"></i>account</p></a>
+				<a href="#" class="cart-link"><p><i class="fa-regular fa-gem"></i>razerstore rewards</p></a>
+				<a href="#" class="cart-link"><p><i class="fa-solid fa-arrow-right-to-bracket"></i>login</p></a>
+			</div>
+		</div>
 	</section>
+
 
 	<!--====items section====-->
 
 	<section class="items">
 		<div class="block-items">
-			<div class="item">
-				<img src="img/01-desktop.jpg" class="desktop">
-				<img src="img/01-mobile.jpg" class="mobile">
+
+			<div class="block-item">
 				<div class="item-inner">
 					<h1>new razer blade 16</h1>
 					<p>bigger.better.still the best.</p>
@@ -57,10 +100,12 @@
 						<a href="#" class="link buy">buy<i class="fa-light fa-greater-than"></i></a>
 					</div>
 				</div>
+				<img src="img/01-desktop.jpg" class="desktop">
+				<img src="img/01-mobile.jpg" class="mobile">
+			</div>
 
-				<img src="img/03-desktop.jpg" class="desktop">
-				<img src="img/03-mobile.jpg" class="mobile">
-				<div class="item-inner2">
+			<div class="block-item">
+				<div class="item-inner">
 					<h1>new razer blade 18</h1>
 					<p>the ultimate desktop replacement.</p>
 					<div class="flex">
@@ -68,6 +113,8 @@
 						<a href="#" class="link buy">buy<i class="fa-light fa-greater-than"></i></a>
 					</div>
 				</div>
+				<img src="img/03-desktop.jpg" class="desktop">
+				<img src="img/03-mobile.jpg" class="mobile">
 			</div>
 		</div>
 
@@ -153,7 +200,7 @@
 
 	<section class="footer">
 		<div class="container">
-			<div class="grid-footer">
+			<!-- <div class="grid-footer">
 				<div class="shop top">
 					<p class="footer-text">shop</p>
 					<div class="footer-links">
@@ -206,9 +253,9 @@
 				<div class="game top">
 					<p class="footer-green">FOR GAMERS. BY GAMERS.™</p>
 					<div class="footer-links">
-						<a href="#" class="footer-link"><p>About Us</p></a>
-						<a href="#" class="footer-link"><p>Careers</p></a>
-						<a href="#" class="footer-link"><p>Press Room</p></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
 					</div>
 				</div>
 			</div>
@@ -224,18 +271,105 @@
 					<li class="last"><a href="#" class="none">Cookie Policy</a></li>
 				</ul>
 				<p class="state">United States  |  <a href="#">Change Location ></a></p>
+			</div> -->
+
+			<div class="footer-grid">
+				<div class="shop top">
+					<p class="footer-text">shop</p>
+					<div class="footer-links">
+						<a href="#" class="footer-link"><p>RazerStores</p></a>
+						<a href="#" class="footer-link"><p>RazerCafe</p></a>
+						<a href="#" class="footer-link"><p>Store Locator</p></a>
+						<a href="#" class="footer-link"><p>Purchase Programs</p></a>
+						<a href="#" class="footer-link"><p>Education</p></a>
+						<a href="#" class="footer-link"><p>Exclusives</p></a>
+						<a href="#" class="footer-link"><p>RazerStore Rewards</p></a>
+						<a href="#" class="footer-link"><p>Newsletter</p></a>
+					</div>
+				</div>
+				<!--====explore====-->
+				<div class="explore top">
+					<p class="footer-text">explore</p>
+					<div class="footer-links">
+						<a href="#" class="footer-link"><p>Technology</p></a>
+						<a href="#" class="footer-link"><p>Chroma RGB</p></a>
+						<a href="#" class="footer-link"><p>Concepts</p></a>
+						<a href="#" class="footer-link"><p>Esports</p></a>
+						<a href="#" class="footer-link"><p>Collabs</p></a>
+					</div>
+				</div>
+				<!--====support====-->
+				<div class="support top">
+					<p class="footer-text">support</p>
+					<div class="footer-links">
+						<a href="#" class="footer-link"><p>Get Help</p></a>
+						<a href="#" class="footer-link"><p>Registration & Warranty</p></a>
+						<a href="#" class="footer-link"><p>RazerStore Support</p></a>
+						<a href="#" class="footer-link"><p>RazerCare</p></a>
+						<a href="#" class="footer-link"><p>Manage Razer ID</p></a>
+						<a href="#" class="footer-link"><p>Support Videos</p></a>
+						<a href="#" class="footer-link"><p>Accessibility Statement</p></a>
+					</div>
+				</div>
+				<!--====company====-->
+				<div class="company top">
+					<p class="footer-text">company</p>
+					<div class="footer-links">
+						<a href="#" class="footer-link"><p>About Us</p></a>
+						<a href="#" class="footer-link"><p>Careers</p></a>
+						<a href="#" class="footer-link"><p>Press Room</p></a>
+						<a href="#" class="footer-link"><p>zVentures</p></a>
+						<a href="#" class="footer-link"><p>Contact Us</p></a>
+					</div>
+				</div>
+				<!--====game====-->
+				<div class="game top">
+					<p class="footer-green">FOR GAMERS. BY GAMERS.™</p>
+					<div class="footer-links">
+						<a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="line"></div>
+			<div class="flex-footer">
+				<p class="copyright">Copyright © 2023 Razer Inc. All rights reserved.</p>
+
+
+				<ul>
+					<li class="last"><a href="#">Site Map </a></li>
+					<li class="last"><a href="#">Legal Terms  </a></li>
+					<li class="last"><a href="#">Privacy Policy  </a></li>
+					<li class="last"><a href="#" class="none">Cookie Policy</a></li>
+				</ul>
+				<p class="state">United States  |  <a href="#">Change Location ></a></p>
+			</div>
+
+			<div class="footer-mobile">
+				<p class="copyright">Copyright © 2023 Razer Inc. All rights reserved.</p>
+				<ul>
+					<li class="last"><a href="#">Site Map </a></li>
+					<li class="last"><a href="#">Legal Terms  </a></li>
+					<li class="last"><a href="#">Privacy Policy  </a></li>
+					<li class="last"><a href="#" class="none">Cookie Policy</a></li>
+				</ul>
+				<div class="line2"></div>
+				<p class="state">United States  |  <a href="#">Change Location ></a></p>
+
+				<div class="game top">
+					<p class="footer-green">FOR GAMERS. BY GAMERS.™</p>
+					<div class="footer-links">
+						<a href="#" class="footer-link"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		
 	</section>
-	
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init({
-		  offset: 200,
-		  duration: 1000
-		});
-	  </script>
+
+	<script src="app.js"></script>
 </body>
 </html>

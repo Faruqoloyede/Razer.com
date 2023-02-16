@@ -480,9 +480,9 @@ img {
 		width: 100%;
 	}
 
-	/* .menu-nav {
+	.menu-nav {
 		position: absolute;
-		top: -700px;
+		top: -900px;
 		right: 0;
 		left: 0;
 		background-color: var(--bgnav);
@@ -490,7 +490,7 @@ img {
 		width: 100vw;
 		transition: all .4s ease-in-out;
 		display: block;
-	} */
+	}
 
 	.menu-nav.active {
 		top: 15%;

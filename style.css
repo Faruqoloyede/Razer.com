@@ -480,7 +480,7 @@ img {
 		width: 100%;
 	}
 
-	.menu-nav {
+	/* .menu-nav {
 		position: absolute;
 		top: -700px;
 		right: 0;
@@ -490,7 +490,7 @@ img {
 		width: 100vw;
 		transition: all .4s ease-in-out;
 		display: block;
-	}
+	} */
 
 	.menu-nav.active {
 		top: 15%;
@@ -543,7 +543,7 @@ img {
 	.shopping2 {
 		color: var(--navcolor);
 	}
-	
+
 	.cart {
 		position: absolute;
 		right: 0;
